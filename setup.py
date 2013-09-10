@@ -1,6 +1,6 @@
 from distutils.core import setup
 
-VERSION = '0.4.3-bootstrap'
+VERSION = 'bootstrap0.1-based-on-0.4.3'
 
 setup(
     name='django-registration-defaults',
