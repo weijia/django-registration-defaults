@@ -27,7 +27,7 @@ setup(
     ],
     packages=['registration_defaults'],
     package_dir={'registration_defaults': 'registration_defaults'},
-    package_data={'registration_defaults': ['templates/*.html', 'static/*', 'templates/*/*.html', 'templates/*/*.txt']},
+    package_data={'registration_defaults': ['templates/*.html', 'static/*/*/*/*', 'templates/*/*.html', 'templates/*/*.txt']},
     include_package_data=True,
     zip_safe=False,
 )
