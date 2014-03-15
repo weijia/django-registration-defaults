@@ -6,7 +6,7 @@
         {% if field.errors %}
             <span class='help-inline control-group error'>{{ field.errors|join:'<br />' }}</span>
         {% endif %}
-        
+        <input type="hidden" name="next" value="{{ next }}" />
         <span class="help-block">{{ field.help_text }}</span>
 
     </div>
