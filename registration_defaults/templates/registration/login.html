@@ -21,6 +21,7 @@
             </fieldset>
         </form>
         <p><a href="{% url django.contrib.auth.views.password_reset %}">{% trans "Reset my password" %}</a></p>
+        <!--Ref: https://github.com/macdhuibh/django-registration-templates/blob/master/registration/login.html-->
         <p>{% trans "Not member" %}? <a href="{% url registration_register %}">{% trans "Register" %}</a>!</p>
         <script type="text/javascript">
             $(function(){
