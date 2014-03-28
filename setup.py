@@ -1,4 +1,7 @@
-from distutils.core import setup
+try:
+    from setuptools import setup
+except:
+    from distutils.core import setup
 
 VERSION = 'bootstrap0.1-based-on-0.4.3'
 
