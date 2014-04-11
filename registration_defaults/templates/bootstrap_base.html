@@ -53,8 +53,8 @@
                     {% else %}
                     <form class="navbar-form pull-right" action="{% url django.contrib.auth.views.login %}" method="post">
                         {% csrf_token %}
-                        <input type="text" class="input-small" id="id_username" placeholder="{% trans 'Username' %}">
-                        <input type="password" class="input-small" id="id_password" placeholder="{% trans 'Password' %}">
+                        <input type="text" class="input-small" name="username" placeholder="{% trans 'Username' %}">
+                        <input type="password" class="input-small" name="password" placeholder="{% trans 'Password' %}">
                         <button type="submit" class="btn">{% trans 'Log in' %}</button>
                     </form>
                     {% endif %}
