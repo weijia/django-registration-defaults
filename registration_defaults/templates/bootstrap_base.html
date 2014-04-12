@@ -65,6 +65,7 @@
 
     <div class="container">
     {% block container %}
+    {% block content %}
         <div class="content">
             <div class="page-header">
                 <h1>{{ site.name }} <small>{% trans "Sample using Bootstrap from Twitter with django-registration" %}</small></h1>
@@ -76,6 +77,7 @@
                 <li><a href="{% url django.contrib.auth.views.password_reset %}">{% trans "Reset my password" %}</a></li>
             </ul>
         </div>
+    {% endblock %}
     {% endblock %}
     <hr>
     <footer>
